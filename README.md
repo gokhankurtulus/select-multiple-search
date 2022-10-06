@@ -6,7 +6,7 @@ Easy to use JS for searching on select option items.
 
 ## Usage
 
-###Import
+### Import
 ```html
 <link rel="stylesheet" href="select-multiple-search-ui.css">
 <script src="select-multiple-search.js"></script>
@@ -14,7 +14,7 @@ Easy to use JS for searching on select option items.
     selectMultipleSearch('select_id');
 </script>
 ```
-#####Required
+##### Required
 ```html
 <label for="manufacturer">Manufacturer (This element has required but doesn't have multiple)</label>
 <select id="manufacturer" name="manufacturer" required>
@@ -22,7 +22,7 @@ Easy to use JS for searching on select option items.
     <option value="2">NVIDIA</option>
 </select>
 ```
-#####Multiple
+##### Multiple
 ```html
 <label for="brand">Brand (This element has multiple)</label>
 <select id="brand" name="brand[]" multiple>
@@ -35,7 +35,7 @@ Easy to use JS for searching on select option items.
     <option value="7">SAPPHIRE</option>
 </select>
 ```
-#####Required & Multiple
+##### Required & Multiple
 ```html
 <label for="memory">Memory (This element has required & multiple)</label>
 <select id="memory" name="memory[]" multiple required>
@@ -46,7 +46,7 @@ Easy to use JS for searching on select option items.
     <option value="5">24GB</option>
 </select>
 ```
-#####Using optgroup
+##### Using optgroup
 ```html
 <label for="output">Output (This element has optgroup)</label>
 <select id="output" name="output[]" multiple>
