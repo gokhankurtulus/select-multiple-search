@@ -1,0 +1,130 @@
+.select__multiple__search__container {
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 4px;
+}
+
+.select__multiple__search__container * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.select__multiple__search__container select {
+    position: absolute !important;
+    height: 1px !important;
+    width: 1px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: 0 !important;
+    overflow: hidden !important;
+    clip: rect(0 0 0 0) !important;
+    -webkit-clip-path: inset(50%) !important;
+    clip-path: inset(50%) !important;
+}
+
+
+.select__selected__part {
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 4px;
+}
+
+.select__selected {
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    padding: 4px;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    background-color: #CACACA;
+    border: 1px solid #AAA;
+    border-radius: 4px;
+}
+
+.select__selected__remove {
+    background-color: transparent;
+    border: none;
+    color: #999;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1rem;
+    width: 1rem;
+    height: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .1s ease-out;
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+
+.select__selected__remove:hover {
+    color: #323232;
+}
+
+.select__selected__seperator {
+    height: 100%;
+    border: 1px solid #999;
+    border-radius: 1px;
+}
+
+.select__selected__name {
+    cursor: default;
+    color: inherit;
+}
+
+.select__search__part {
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+    gap: 8px;
+}
+
+.select__list {
+    top: 100%;
+    position: absolute;
+    width: max-content;
+    max-height: 240px;
+    max-width: 100%;
+    list-style: none;
+    z-index: 99;
+    display: flex;
+    flex-flow: column nowrap;
+    overflow: hidden;
+    overflow-y: auto;
+    border: 1px solid #CACACA;
+    background: #fff;
+}
+
+.select__list__item__title, .select__list__item {
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.select__list__item__title {
+    font-weight: bolder;
+    background: #CACACA;
+}
+
+.select__list__item {
+    padding: 8px 12px;
+}
+
+.select__list__item:hover, .select__item__highlighted {
+    background: #EFEFEF;
+}
